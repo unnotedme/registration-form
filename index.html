@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>register form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_login_re_4vu2.svg">
+        </div>
+        
+        <div class="form">
+            <form name="form" id="form" action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>register</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">log in</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">first name</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="enter your first name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">last name</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="enter your last name" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="email">email</label>
+                        <input id="email" type="email" name="email" placeholder="name@email.com" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">phone number</label>
+                        <input id="number" type="tel" name="number" placeholder="(xxx) xxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">password</label>
+                        <input id="password" type="password" name="password" placeholder="******" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirm-password">password confirmation</label>
+                        <input id="confirmPassword" type="password" name="confirm-password" placeholder="******" required>
+                    </div>                   
+                </div>
+                
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>gender</h6>
+                        </div>
+
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input class="gender-in-class" type="radio" id="female" name="gender">
+                                <label for="female">female</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input class="gender-in-class" type="radio" id="male" name="gender">
+                                <label for="male">male</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input class="gender-in-class" type="radio" id="other" name="gender">
+                                <label for="other">other</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input class="gender-in-class" type="radio" id="prefer-not-to-say" name="gender">
+                                <label for="prefer-not-to-say">prefer not to say</label>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="submit-button">
+                    <button type="submit" value="submit" onclick="validateAll()"><a>submit</a></button>
+                </div>
+
+            </form>
+        </div>
+    
+    </div>
+
+    <script src="script.js" ></script>
+
+</body>
+</html>
